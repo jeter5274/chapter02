@@ -45,7 +45,9 @@ public class PointApp {
 		p4.setY(15);	
 		p4.draw();
 		
-		
+		Point p5 = new Point(6, 28);
+		p5.draw();
+	
 	}
 
 }
