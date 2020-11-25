@@ -109,4 +109,11 @@ public class TV {
 			System.out.println("TV is off");
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return "TV [channel=" + channel + ", volume=" + volume + ", power=" + power + "]";
+	}
+	
+	
 }
