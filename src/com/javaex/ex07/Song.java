@@ -9,14 +9,31 @@ public class Song {
 	//생성자 0
 	public Song() {}
 	
+	//생성자 2 title, track 비교 → 생성 확인
+	public Song(String title, int track) {
+		this.title = title;
+		if(track < 1) { //복잡한 로직이 있을 수 있음
+			this.track = 0;
+		}else {
+			this.track = track;	
+		}
+		System.out.println("생성자(2)");
+	}
+
 	//생성자 6
 	public Song(String title, String artist, String album, String composer, String year, int track) {
+		/*
+		this()를 통해 다른 생성자를 호출하여 값 입력
 		this.title = title;
+		this.track = track;
+		*/
+		this(title, track); //다른 생성자를 호출한다. 사용한다.
 		this.artist = artist;
 		this.album = album;
 		this.composer = composer;
 		this.year = year;
-		this.track = track;
+		System.out.println("생성자(6)");
+	
 	}
 
 	//생성자 2 title, artist
@@ -33,12 +50,7 @@ public class Song {
 	}
 	*/
 	
-	//생성자 2 title, track 비교 → 생성 확인
-	public Song(String title, int track) {
-		this.title = title;
-		this.track = track;
-	}
-
+	
 	
 	//getter, setter
 	public String getTitle() {

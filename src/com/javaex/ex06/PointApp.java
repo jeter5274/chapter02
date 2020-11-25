@@ -9,6 +9,14 @@ public class PointApp {
 		p01.setY(5);
 		System.out.println(p01.toString());
 		
+		p01.draw();
+		
+		Point p02 = new Point(100, 100);
+		
+		p02.draw();
+		p02.draw(true);
+		p02.draw(false);
+		//위 3개 라인의 메소드가 같아보이지만 다름
 		
 	}
 

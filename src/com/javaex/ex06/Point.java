@@ -30,6 +30,19 @@ public class Point {
 		this.y = y;
 	}
 
+	public void draw() {
+		System.out.println("점[x=" +x+ ", y=" +y+ "]를 그렸습니다.");
+	}
+
+	public void draw(boolean opt) {
+		if(opt == true) {
+			System.out.println("점[x=" +x+ ", y=" +y+ "]를 그렸습니다.");
+		}else {
+			System.out.println("점[x=" +x+ ", y=" +y+ "]를 지웠습니다.");
+		}
+	
+	}
+
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
