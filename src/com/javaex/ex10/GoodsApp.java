@@ -19,12 +19,10 @@ public class GoodsApp {
 		
 		System.out.println(camera.toString());
 		
-		
 		camera.showInfo();
 		computer.showInfo();
 		cup.showInfo();
 		
-
 	}
 
 }

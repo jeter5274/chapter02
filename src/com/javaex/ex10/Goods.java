@@ -56,5 +56,4 @@ public class Goods {
 		return "Goods [name=" + name + ", price=" + price + "]";
 	}
 	
-	
 }

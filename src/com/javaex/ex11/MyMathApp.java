@@ -17,4 +17,5 @@ public class MyMathApp {
 	public static int minus(int a, int b) {
 		return a-b;
 	}
+	
 }

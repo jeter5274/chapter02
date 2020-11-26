@@ -21,4 +21,5 @@ public class MyMath {
 	public static double circle(double r) {
 		return r*r*PI;
 	}
+	
 }
