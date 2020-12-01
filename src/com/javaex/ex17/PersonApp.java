@@ -8,6 +8,9 @@ public class PersonApp {
 		//테스트 -> 섞어쓰기 : 자료형을 통일하되, 학교정보를 유지하고 싶음
 		Person s01 = new Student("유재석", 44, "서울고등학교");
 		
+		Student s = new Student("유재석", 44, "서울고등학교");
+		Person s01 = s;
+		
 		//자식쪽(Student)의 정보를 사용할 수 없음
 		//s01.getSchoolName();을 사용할 수 없음
 		

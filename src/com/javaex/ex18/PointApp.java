@@ -15,8 +15,8 @@ public class PointApp {
 		cpArray[0] = p01;
 		cpArray[1] = p02;
 		cpArray[2] = p03;
-		cpArray[3] = cp01;
-		cpArray[4] = cp02;
+		cpArray[3] = cp01;	//자동 upcasting
+		cpArray[4] = cp02;	//자동 upcasting
 
 		for(int i=0; i<cpArray.length; i++) {
 			cpArray[i].showInfo();	
@@ -25,7 +25,7 @@ public class PointApp {
 		Point udc01 = cpArray[4];	//자료형 같아서 문제없음
 		Point udc02 = (ColorPoint)cpArray[4];	//자동 upcasting
 		ColorPoint udc03 = (ColorPoint)cpArray[4];	//downcasting
-		
+
 	}
 
 }
